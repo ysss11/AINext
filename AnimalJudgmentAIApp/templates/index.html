@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Upload Predict File{% endblock %}
+{% block body %}
+<h1>ファイルをアップロードして判定</h1>
+<p>サル、馬、ブタ、犬、猫、トラ、熊、カピバラ、ペンギン、ウサギ、象、パンダ、キリン、イルカ、ゴリラが判定出来ます。</p>
+<form method=post enctype=multipart/form-data>
+    <input type=file name=file>
+    <input type=submit value=Upload>
+</form>
+<p>アップロード出来るフォーマットは下記です。</p>
+<p>'png', 'jpg', 'gif'</p>
+{% endblock %}
